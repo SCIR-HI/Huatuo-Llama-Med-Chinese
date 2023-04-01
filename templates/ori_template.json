@@ -1,0 +1,6 @@
+{
+    "description": "Template used by Llama without sft",
+    "prompt_input": "问题：{instruction} 回答:",
+    "prompt_no_input": "问题：{instruction} 回答:",
+    "response_split": "回答:"
+}

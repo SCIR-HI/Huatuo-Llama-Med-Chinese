@@ -1,6 +1,6 @@
 [**中文**](./README.md) | [**English**](./README_EN.md)
 
-# 华驼(HuaTuo): 基于中文医学知识的Llama微调模型
+# 华驼(HuaTuo): 基于中文医学知识的LLaMA微调模型
 ### HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)

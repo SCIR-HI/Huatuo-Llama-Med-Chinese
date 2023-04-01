@@ -1,0 +1,15 @@
+out/
+7B/
+13B/
+__pycache__/
+checkpoint**
+minimal-llama**
+lora-llama-med
+upload.py
+lora-**
+*.out
+*result
+*ckpt
+wandb
+todo.txt
+.vscode/
