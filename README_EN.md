@@ -1,6 +1,6 @@
 [**中文**](./README.md) | [**English**](./README_EN.md)
 <p align="center" width="100%">
-<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo.pdf" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
+<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 # HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions
 
