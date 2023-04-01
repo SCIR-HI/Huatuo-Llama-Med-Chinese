@@ -17,6 +17,7 @@ pip install -r requirements.txt
 ```
 ### 模型下载
 LORA权重可以通过[百度网盘](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf)和[HuggingFace](https://huggingface.co/thinksoso/lora-llama-med)下载
+
 下载LORA权重并解压，解压后的格式如下：
 
 ```
