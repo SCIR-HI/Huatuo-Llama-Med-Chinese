@@ -1,4 +1,7 @@
 [**中文**](./README.md) | [**English**](./README_EN.md)
+<p align="center" width="100%">
+<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
+</p>
 
 # 华驼(HuaTuo): 基于中文医学知识的LLaMA微调模型
 ### HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions
@@ -8,6 +11,7 @@
 
 本项目开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。我们通过医学知识图谱和GPT3.5 API构建了中文医学指令数据集，并在此基础上对LLaMA进行了指令微调，提高了LLaMA在医疗领域的问答效果。
 
+基于相同的数据，我们还训练了医疗版本的ChatGLM模型: [ChatGLM-6B-Med](https://github.com/SCIR-HI/Med-ChatGLM)
 
 ## A Quick Start
 首先安装依赖包，python环境建议3.9+
@@ -36,6 +40,8 @@ lora-llama-med/
 bash ./scripts/infer.sh
 ```
 
+也可参考`./scripts/test.sh`
+
 ### 数据集构建
 我们采用了公开和自建的中文医学知识库，主要参考了[cMeKG](https://github.com/king-yyf/CMeKG_tools)。
 医学知识库围绕疾病、药物、检查指标等构建，字段包括并发症，高危因素，组织学检查，临床症状，药物治疗，辅助治疗等。知识库示例如下:
@@ -48,9 +54,10 @@ bash ./scripts/infer.sh
 指令微调的训练集数据示例如下：
 
 ```
-"问题：患者30岁，有胰腺假性囊肿病史，出现黄疸，怀疑胰腺假性囊肿并发了门静脉高压症，如何治疗？"
-"回答: 胰腺假性囊肿并发门静脉高压症需要密切观察病情，积极治疗原发病，进行药物干预，如利尿剂、强心剂等，注意肝功能保护和营养支持。严重病例需要考虑行肝移植。"
+"问题：一位年轻男性长期使用可卡因，突然出现胸痛、呕吐、出汗等症状，经检查发现心电图反映心肌急性损伤，请问可能患的是什么疾病？治疗方式是什么？"
+回答: 可能患的是心肌梗塞，需要进行维拉帕米、依普利酮、硝酸甘油、ß阻滞剂、吗啡等药物治疗，并进行溶栓治疗、低分子量肝素、钙通道阻滞剂等辅助治疗。此外需要及时停用可卡因等药物，以防止病情加重。"
 ```
+
 我们提供了模型的训练数据集，共计八千余条，需要注意的是，虽然训练集的构建融入了知识，但是仍存在错误和不完善的地方，后续我们会利用更好的策略迭代更新数据集。
 
 指令微调数据集质量仍有限，后续将进行不断迭代，同时医学知识库和数据集构建代码还在整理中，整理完成将会发布。
@@ -75,7 +82,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## 模型效果对比
 
-| 测试输入 | Llama输出  | Alpaca输出 | Huatuo华驼输出
+| 测试输入 | Llama输出  | Alpaca输出 | Huatuo华驼输出|
 |:------------- |:---------------| :-------------|:-------------|
 |小张最近感觉身体不适，出现心悸、气促等症状。体检发现心脏扩大、搏动减弱。|问题：小张最近感觉身体不适，出现心悸、气促等症状。体检发现心脏扩大、搏动减弱。| 最近，小张一直感觉身体不舒服，有心烦意乱、呼吸急促等症状。体格检查显示心脏增大，肌肉无力。|**小张可能患有心肌炎，建议尽快到医院进行检查和治疗。治疗方案包括药物治疗和手术治疗。**|
 |麻风病和儿童哮喘的病因是否一致？|儿童哮喘和麻风病的病因是一致，但是儿童哮喘和麻风病的病因不一致|是的，哮喘和儿童喘息有相似的原因。| **不一致，麻风病的病因是麻风杆菌感染，而儿童哮喘的病因是喂养不良、吸烟等因素。**|
@@ -93,6 +100,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 - Stanford Alpaca: https://github.com/tatsu-lab/stanford_alpaca
 - alpaca-lora by @tloen: https://github.com/tloen/alpaca-lora
 - CMeKG https://github.com/king-yyf/CMeKG_tools
+- 文心一言 https://yiyan.baidu.com/welcome 本项目的logo由文心一言自动生成
 
 ## 免责声明
 本项目相关资源仅供学术研究之用，严禁用于商业用途。使用涉及第三方代码的部分时，请严格遵循相应的开源协议。模型生成的内容受模型计算、随机性和量化精度损失等因素影响，本项目无法对其准确性作出保证。本项目数据集绝大部分由模型生成，即使符合某些医学事实，也不能被用作实际医学诊断的依据。对于模型输出的任何内容，本项目不承担任何法律责任，亦不对因使用相关资源和输出结果而可能产生的任何损失承担责任。
