@@ -31,7 +31,7 @@ def main(
     instruct_dir: str = "",
     use_lora: bool = True,
     lora_weights: str = "tloen/alpaca-lora-7b",
-    # The prompt template to use, will default to alpaca.
+    # The prompt template to use, will default to med_template.
     prompt_template: str = "med_template",
 ):
     prompter = Prompter(prompt_template)
@@ -111,9 +111,10 @@ def main(
         infer_from_json(instruct_dir)
     else:
         for instruction in [
-            "一位50岁女性出现不适、厌油腻、肝囊肿等症状，检查后发现为胆囊癌，并且病情十分严重，应该如何进行治疗？",
+            "我感冒了，怎么治疗",
             "一个患有肝衰竭综合征的病人，除了常见的临床表现外，还有哪些特殊的体征？",
             "急性阑尾炎和缺血性心脏病的多发群体有何不同？",
+            "小李最近出现了心动过速的症状，伴有轻度胸痛。体检发现P-R间期延长，伴有T波低平和ST段异常",
         ]:
             print("Instruction:", instruction)
             print("Response:", evaluate(instruction))
