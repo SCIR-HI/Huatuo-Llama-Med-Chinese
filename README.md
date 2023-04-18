@@ -13,6 +13,8 @@
 
 基于相同的数据，我们还训练了医疗版本的ChatGLM模型: [ChatGLM-6B-Med](https://github.com/SCIR-HI/Med-ChatGLM)
 
+我们即将发布我们研发的新模型-[扁鹊（PienChueh）](https://github.com/SCIR-HI/Bian-Que_Pien-Chueh)，欢迎大家届时使用体验。
+
 ## A Quick Start
 首先安装依赖包，python环境建议3.9+
 
@@ -87,7 +89,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 |一位患者出现了持续性的胀痛和黄疸，经影像学检查后确诊为肝胆管结石病，应该采取哪些治疗方案？|肝胆管结石病患者应该采取哪些治疗方案？|患者应接受手术和化疗相结合的治疗。| **针对肝胆管结石病，治疗方案包括手术治疗、药物治疗和辅助治疗等。具体治疗方案需要根据患者的具体情况而定。**|
 
 ## 项目参与者
-本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://github.com/s65b40) 、[刘驰](https://github.com/thinksoso)完成，指导教师为赵森栋副教授，秦兵教授以及刘挺教授。 
+本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://github.com/s65b40) 、[刘驰](https://github.com/thinksoso)、[席奴瓦](https://github.com/rootnx)、[强泽文](https://github.com/1278882181)、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为赵森栋副教授，秦兵教授以及刘挺教授。 
 
 
 ## 致谢
@@ -107,12 +109,12 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 如果你使用了本项目的数据或者代码，请声明引用
 
 ```
-@misc{huatuo,
-  author={Haochun Wang, Chi Liu, Sendong Zhao, Bing Qin, Ting Liu},
-  title = {HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese}},
+@misc{wang2023huatuo,
+      title={HuaTuo: Tuning LLaMA Model with Chinese Medical Knowledge}, 
+      author={Haochun Wang and Chi Liu and Nuwa Xi and Zewen Qiang and Sendong Zhao and Bing Qin and Ting Liu},
+      year={2023},
+      eprint={2304.06975},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```

@@ -9,6 +9,9 @@
 
 This repo open-sources the Instruct-tuned LLaMA-7B model that has been fine-tuned with Chinese medical instructions. We constructed a Chinese medical instruct-tuning dataset using medical knowledge graphs and the GPT3.5 API, and performed instruction-tuning on LLaMA based on this dataset, improving its question-answering performance in the medical field.
 
+We also trained a medical version of ChatGLM: [ChatGLM-6B-Med](https://github.com/SCIR-HI/Med-ChatGLM) based on the same data.
+
+We are about to release our new model [扁鹊（PienChueh）](https://github.com/SCIR-HI/Bian-Que_Pien-Chueh). 
 
 
 ## A Quick Start
@@ -87,7 +90,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## Contributors
 
-This project was founded by the Health Intelligence Group of the Research Center for Social Computing and Information Retrieval at Harbin Institute of Technology, including [Haochun Wang](https://github.com/s65b40) and [Chi Liu](https://github.com/thinksoso), supervised by Associate Professor Sendong Zhao, Professor Bing Qin, and Professor Ting Liu.
+This project was founded by the Health Intelligence Group of the Research Center for Social Computing and Information Retrieval at Harbin Institute of Technology, including [Haochun Wang](https://github.com/s65b40), [Chi Liu](https://github.com/thinksoso), [Nuwa Xi](https://github.com/rootnx), [Zewen Qiang](https://github.com/1278882181), [Zijian Li](https://github.com/FlowolfzzZ) supervised by Associate Professor Sendong Zhao, Professor Bing Qin, and Professor Ting Liu.
 
 
 ## Acknowledgements
@@ -108,12 +111,12 @@ The resources related to this project are for academic research purposes only an
 If you use the data or code from this project, please declare the reference:
 
 ```
-@misc{huatuo,
-  author={Haochun Wang, Chi Liu, Sendong Zhao, Bing Qin, Ting Liu},
-  title = {HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese}},
+@misc{wang2023huatuo,
+      title={HuaTuo: Tuning LLaMA Model with Chinese Medical Knowledge}, 
+      author={Haochun Wang and Chi Liu and Nuwa Xi and Zewen Qiang and Sendong Zhao and Bing Qin and Ting Liu},
+      year={2023},
+      eprint={2304.06975},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
