@@ -13,5 +13,6 @@ lora-**
 wandb
 todo.txt
 .vscode/
+*tmp*
 .DS_Store
 .idea

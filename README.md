@@ -42,6 +42,8 @@ lora-llama-med/
 bash ./scripts/infer.sh
 ```
 
+也可参考`./scripts/test.sh`
+
 ### 数据集构建
 我们采用了公开和自建的中文医学知识库，主要参考了[cMeKG](https://github.com/king-yyf/CMeKG_tools)。
 医学知识库围绕疾病、药物、检查指标等构建，字段包括并发症，高危因素，组织学检查，临床症状，药物治疗，辅助治疗等。知识库示例如下:
