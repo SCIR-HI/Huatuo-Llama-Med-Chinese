@@ -1,9 +1,7 @@
 [**中文**](./README.md) | [**English**](./README_EN.md)
 
 <p align="center" width="100%">
-
 <a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
-
 </p>
 
   
@@ -12,9 +10,7 @@
 
 ### HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions
 
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE)
-
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
   
 本项目开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。我们通过医学知识图谱和GPT3.5 API构建了中文医学指令数据集，并在此基础上对LLaMA进行了指令微调，提高了LLaMA在医疗领域的问答效果。
@@ -43,7 +39,7 @@ pip install -r requirements.txt
 LORA权重可以通过百度网盘或Huggingface下载
  
  - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf)和[HuggingFace](https://huggingface.co/thinksoso/lora-llama-med)
- - 基于医学文献 [百度网盘]()
+ - 基于医学文献 [百度网盘](https://pan.baidu.com/s/1jADypClR2bLyXItuFfSjPA?pwd=odsk)
 
   
 下载LORA权重并解压，解压后的格式如下：
@@ -52,17 +48,13 @@ LORA权重可以通过百度网盘或Huggingface下载
 ```
 #基于医学知识库
 lora-llama-med/
-
   - adapter_config.json   # LoRA权重配置文件
-
   - adapter_model.bin   # LoRA权重文件
 
 
 #基于医学文献
 lora-llama-med-literature/
-
   - adapter_config.json   # LoRA权重配置文件
-
   - adapter_model.bin   # LoRA权重文件
 
 ```
@@ -132,9 +124,7 @@ bash ./scripts/infer-literature-multi.sh
 指令微调数据集质量仍有限，后续将进行不断迭代，同时医学知识库和数据集构建代码还在整理中，整理完成将会发布。
 
 
-此外，我们收集了2023年关于肝癌疾病的中文医学文献，利用GPT3.5接口围绕医学文献多轮问答数据。在·`./data_literature/liver_cancer.json`中我们提供了其中的1k条训练样例。
-
-目前，训练样本的质量仍然有限，在后续我们会进一步迭代数据，会以`数据集`的形式对外进行发布。训练样本的示例如下：
+此外，我们收集了2023年关于肝癌疾病的中文医学文献，利用GPT3.5接口围绕医学文献多轮问答数据。在·`./data_literature/liver_cancer.json`中我们提供了其中的1k条训练样例。目前，训练样本的质量仍然有限，在后续我们会进一步迭代数据，会以`公开数据集`的形式对外进行发布。训练样本的示例如下：
 
 <p align="center" width="100%">
 
@@ -191,7 +181,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## 项目参与者
 
-本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://github.com/s65b40) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿]()、[席奴瓦](https://github.com/rootnx)、陈雨晗、[强泽文](https://github.com/1278882181)、陈健宇、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为赵森栋副教授，秦兵教授以及刘挺教授。
+本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://github.com/s65b40) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿](https://github.com/RuiBai1999)、[席奴瓦](https://github.com/rootnx)、[陈雨晗](https://github.com/Imsovegetable)、[强泽文](https://github.com/1278882181)、[陈健宇](https://github.com/JianyuChen01)、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为赵森栋副教授，秦兵教授以及刘挺教授。
 
   
   
@@ -205,13 +195,9 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
   
 
 - Facebook LLaMA: https://github.com/facebookresearch/llama
-
 - Stanford Alpaca: https://github.com/tatsu-lab/stanford_alpaca
-
 - alpaca-lora by @tloen: https://github.com/tloen/alpaca-lora
-
 - CMeKG https://github.com/king-yyf/CMeKG_tools
-
 - 文心一言 https://yiyan.baidu.com/welcome 本项目的logo由文心一言自动生成
 
   
@@ -231,19 +217,12 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 ```
 
 @misc{wang2023huatuo,
-
       title={HuaTuo: Tuning LLaMA Model with Chinese Medical Knowledge},
-
       author={Haochun Wang and Chi Liu and Nuwa Xi and Zewen Qiang and Sendong Zhao and Bing Qin and Ting Liu},
-
       year={2023},
-
       eprint={2304.06975},
-
       archivePrefix={arXiv},
-
       primaryClass={cs.CL}
-
 }
 
 ```

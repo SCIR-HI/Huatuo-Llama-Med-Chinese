@@ -4,10 +4,11 @@
 </p>
 # HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions
 
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
 This repo open-sources the Instruct-tuned LLaMA-7B model that has been fine-tuned with Chinese medical instructions. We constructed a Chinese medical instruct-tuning dataset using medical knowledge graphs and the GPT3.5 API, and performed instruction-tuning on LLaMA based on this dataset, improving its question-answering performance in the medical field.
+
+In addition, we tried to use the GPT3.5 API to integrate [conclusions] in the medical literature as external information into multiple rounds of dialogue, and based on this, we fine-tuned LLaMA. At present, we only open model parameters trained for the single disease "liver cancer". In the future, we plan to release a medical dialogue dataset incorporating medical literature conclusions, and plan to train models for 16 diseases related to "liver, gallbladder and pancreas".
 
 We also trained a medical version of ChatGLM: [ChatGLM-6B-Med](https://github.com/SCIR-HI/Med-ChatGLM) based on the same data.
 
@@ -21,14 +22,24 @@ Firstly, install the required packages. It is recommended to use Python 3.9 or a
 pip install -r requirements.txt
 ```
 ### Model download
-LORA weights can be downloaded through [Baidu Netdisk](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf) or [HuggingFace](https://huggingface.co/thinksoso/lora-llama-med).
+LORA weights can be downloaded through Baidu Netdisk or Huggingface.
+
+-Based on medical knowledge base. [Baidu Netdisk](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf) or [HuggingFace](https://huggingface.co/thinksoso/lora-llama-med).
+-Based on medical literature. [Baidu Netdisk](https://pan.baidu.com/s/1jADypClR2bLyXItuFfSjPA?pwd=odsk)
 
 Download the LORA weight file and extract it. The format of the extracted file should be as follows:
 
 ```
+#Based on medical knowledge base
 lora-llama-med/
   - adapter_config.json		# LoRA weight configuration file
   - adapter_model.bin		# LoRA weights
+
+#Based on medical literature
+lora-llama-med-literature/
+  - adapter_config.json   # LoRA weight configuration file
+  - adapter_model.bin   # LoRA weights
+
 ```
 
 ### Infer
@@ -37,7 +48,15 @@ We provided some test cases in `./data/infer.json`, which can be replaced with o
 Run the infer script
 
 ```
+#Based on medical knowledge base
 bash ./scripts/infer.sh
+
+#Based on medical literature
+#single-epoch
+bash ./scripts/infer-literature-single.sh
+
+#multi-epoch
+bash ./scripts/infer-literature-multi.sh
 ```
 
 ### Dataset construction
@@ -60,6 +79,14 @@ An example of the training dataset for instruct-tuning is shown below:
 We provided a training dataset for the model, consisting of more than eight thousand entries. It should be noted that although knowledge has been incorporated into the construction of the training set, there are still errors and imperfections. We will use better strategies to iteratively update the dataset in the future.
 
 The quality of the dataset for instruct-tuning is still limited. We will continue to iterate and improve it. Meanwhile, the medical knowledge base and dataset construction code are still being organized and will be released once completed.
+
+In addition, we collected Chinese medical literature on liver cancer in 2023, and used the GPT3.5 interface to collect multiple rounds of question-and-answer data around the medical literature. We provide 1k training examples in `./data_literature/liver_cancer.json`. At present, the quality of training samples is still limited. In the future, we will further iterate the data and release it in the form of `public dataset`. An example of a training sample is as follows:
+
+<p align="center" width="100%">
+
+<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/case.png" alt="SCIR-HI-HuaTuo-literature" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+
+</p>
 
 
 ### Finetune
@@ -90,7 +117,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## Contributors
 
-This project was founded by the Health Intelligence Group of the Research Center for Social Computing and Information Retrieval at Harbin Institute of Technology, including [Haochun Wang](https://github.com/s65b40), [Chi Liu](https://github.com/thinksoso), [Nuwa Xi](https://github.com/rootnx), [Zewen Qiang](https://github.com/1278882181), [Zijian Li](https://github.com/FlowolfzzZ) supervised by Associate Professor Sendong Zhao, Professor Bing Qin, and Professor Ting Liu.
+This project was founded by the Health Intelligence Group of the Research Center for Social Computing and Information Retrieval at Harbin Institute of Technology, including [Haochun Wang](https://github.com/s65b40), [Yanrui Du](https://github.com/DYR1), [Chi Liu](https://github.com/thinksoso), [Rui Bai](https://github.com/RuiBai1999), [Nuwa Xi](https://github.com/rootnx), [Yuhan Chen](https://github.com/Imsovegetable), [Zewen Qiang](https://github.com/1278882181), [Jianyu Chen](https://github.com/JianyuChen01), [Zijian Li](https://github.com/FlowolfzzZ) supervised by Associate Professor Sendong Zhao, Professor Bing Qin, and Professor Ting Liu.
 
 
 ## Acknowledgements
