@@ -177,13 +177,18 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 |麻风病和儿童哮喘的病因是否一致？|儿童哮喘和麻风病的病因是一致，但是儿童哮喘和麻风病的病因不一致|是的，哮喘和儿童喘息有相似的原因。| **不一致，麻风病的病因是麻风杆菌感染，而儿童哮喘的病因是喂养不良、吸烟等因素。**|
 |一位患者出现了持续性的胀痛和黄疸，经影像学检查后确诊为肝胆管结石病，应该采取哪些治疗方案？|肝胆管结石病患者应该采取哪些治疗方案？|患者应接受手术和化疗相结合的治疗。| **针对肝胆管结石病，治疗方案包括手术治疗、药物治疗和辅助治疗等。具体治疗方案需要根据患者的具体情况而定。**|
 
+
   
 
 ## 项目参与者
 
 本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://github.com/s65b40) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿](https://github.com/RuiBai1999)、[席奴瓦](https://github.com/rootnx)、[陈雨晗](https://github.com/Imsovegetable)、[强泽文](https://github.com/1278882181)、[陈健宇](https://github.com/JianyuChen01)、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为赵森栋副教授，秦兵教授以及刘挺教授。
 
-  
+使用问题和建议欢迎加入群聊交流
+<img src="assets/wechat_group.jpg" alt="group" style="width: 80%; min-width: 300px; display: block; margin: auto;">
+
+
+
   
 
 ## 致谢
