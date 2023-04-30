@@ -22,7 +22,12 @@
 
 我们即将发布我们研发的新模型-[扁鹊（PienChueh）](https://github.com/SCIR-HI/Bian-Que_Pien-Chueh)，欢迎大家届时使用体验。
 
-  
+## 更新日志
+**[2023/04/28] 增加了基于[中文Alpaca大模型](https://github.com/ymcui/Chinese-LLaMA-Alpaca)进行指令微调的模型发布。**
+
+[2023/04/24] 增加了基于LLaMA和医学文献进行指令微调的模型发布。
+
+[2023/03/31] 发布了基于LLaMA和医学知识库进行指令微调的模型发布。
 
 ## A Quick Start
 
@@ -36,27 +41,41 @@ pip install -r requirements.txt
 
 ### 模型下载
 
-LORA权重可以通过百度网盘或Huggingface下载
- 
+LoRA权重可以通过百度网盘或Huggingface下载：
+
+1. 对LLaMA进行指令微调的LoRA权重文件
  - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf)和[HuggingFace](https://huggingface.co/thinksoso/lora-llama-med)
  - 基于医学文献 [百度网盘](https://pan.baidu.com/s/1jADypClR2bLyXItuFfSjPA?pwd=odsk)
+2. 对Alpaca进行指令微调的LoRA权重文件
+ - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/16oxcjzXnXjDpL8SKihgNxw?pwd=scir)
+ - 基于医学知识库和医学文献 [百度网盘](https://pan.baidu.com/s/1HDdK84ASHmzOFlkmypBIJw?pwd=scir)
 
-  
-下载LORA权重并解压，解压后的格式如下：
+下载LoRA权重并解压，解压后的格式如下：
 
 
 ```
+#1.对LLaMA进行指令微调的LoRA权重文件
 #基于医学知识库
 lora-llama-med/
   - adapter_config.json   # LoRA权重配置文件
   - adapter_model.bin   # LoRA权重文件
-
 
 #基于医学文献
 lora-llama-med-literature/
   - adapter_config.json   # LoRA权重配置文件
   - adapter_model.bin   # LoRA权重文件
 
+
+#2. 对Alpaca进行指令微调的LoRA权重文件
+#基于医学知识库
+lora-alpaca-med-alpaca/
+  - adapter_config.json   # LoRA权重配置文件
+  - adapter_model.bin   # LoRA权重文件
+
+#基于医学知识库和医学文献
+lora-alpaca-med-alpaca-alldata/
+  - adapter_config.json   # LoRA权重配置文件
+  - adapter_model.bin   # LoRA权重文件
 ```
 
 
