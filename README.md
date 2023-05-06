@@ -210,6 +210,10 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
     <img src="assets/wechat.jpg" alt="group" style="width:50%;">
 </div>
 
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=SCIR-HI/Huatuo-Llama-Med-Chinese&type=Date)](https://star-history.com/#SCIR-HI/Huatuo-Llama-Med-Chinese&Date)
+
+
   
 
 ## 致谢
