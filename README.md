@@ -41,10 +41,10 @@ pip install -r requirements.txt
 
 ### 模型下载
 
-LoRA权重可以通过百度网盘或Huggingface下载：
+LoRA权重可以通过百度网盘或Hugging Face下载：
 
 1. 对LLaMA进行指令微调的LoRA权重文件
- - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf)和[HuggingFace](https://huggingface.co/thinksoso/lora-llama-med)
+ - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf)和[Hugging Face](https://huggingface.co/thinksoso/lora-llama-med)
  - 基于医学文献 [百度网盘](https://pan.baidu.com/s/1jADypClR2bLyXItuFfSjPA?pwd=odsk)
 2. 对Alpaca进行指令微调的LoRA权重文件
  - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/16oxcjzXnXjDpL8SKihgNxw?pwd=scir)
