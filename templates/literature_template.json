@@ -1,0 +1,5 @@
+{
+    "description": "Template used by Alpaca-LoRA.",
+    "prompt_no_input": "以下是描述任务的说明，编写适当地回复完成请求的响应。\n\n ### 说明:\n{instruction}\n\n### 回复:\n",
+    "response_split": "### 回复:"    
+}
