@@ -2,7 +2,7 @@
 <p align="center" width="100%">
 <a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
-# HuaTuo: Tuning LLaMA Model With Chinese Medical Instructions
+# BenTsao (original name: HuaTuo): Tuning LLaMA Model With Chinese Medical Instructions
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
