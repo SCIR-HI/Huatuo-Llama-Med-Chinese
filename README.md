@@ -203,7 +203,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 ## 常见问题
 1. Q: 为什么更名为"本草"？
    
-   A: 为SCIR实验室大预言模型命名一致性，中文医学大模型名称调整为"本草"。
+   A: 为SCIR实验室大语言模型命名一致性，中文医学大模型名称调整为"本草"。
 
 2. Q: 为什么是"华驼"而不是"华佗"？ 
    
