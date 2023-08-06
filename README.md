@@ -22,7 +22,9 @@
 
 
 ## 更新日志
-**[2023/05/12] 模型由"华驼"更名为"本草"**
+**[2023/07/19] 增加了基于[Bloom](https://huggingface.co/bigscience/bloom-7b1)进行指令微调的模型发布。**
+
+[2023/05/12] 模型由"华驼"更名为"本草"。
 
 [2023/04/28] 增加了基于[中文Alpaca大模型](https://github.com/ymcui/Chinese-LLaMA-Alpaca)进行指令微调的模型发布。
 
@@ -50,6 +52,9 @@ LoRA权重可以通过百度网盘或Hugging Face下载：
 2. 对Alpaca进行指令微调的LoRA权重文件
  - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/16oxcjzXnXjDpL8SKihgNxw?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-alpaca-med)
  - 基于医学知识库和医学文献 [百度网盘](https://pan.baidu.com/s/1HDdK84ASHmzOFlkmypBIJw?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-alpaca-med-alldata)
+3. 对Bloom进行指令微调的LoRA权重文件
+ - 基于28159条医学问答 [百度网盘](https://pan.baidu.com/s/1jPcuEOhesFGYpzJ7U52Fag?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-bloom-med-bloom)
+
 
 下载LoRA权重并解压，解压后的格式如下：
 
@@ -75,6 +80,13 @@ lora-alpaca-med-alpaca/
 
 #基于医学知识库和医学文献
 lora-alpaca-med-alpaca-alldata/
+  - adapter_config.json   # LoRA权重配置文件
+  - adapter_model.bin   # LoRA权重文件
+
+
+#3. 对Bloom进行指令微调的LoRA权重文件
+#基于28159条医学问答
+lora-bloom-med-bloom/
   - adapter_config.json   # LoRA权重配置文件
   - adapter_model.bin   # LoRA权重文件
 ```
