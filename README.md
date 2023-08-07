@@ -22,6 +22,8 @@
 ## News
 **[2023/08/07] 🔥🔥增加了基于[活字](https://github.com/HIT-SCIR/huozi)进行指令微调的模型发布，模型效果显著提升。🔥🔥**
 
+[2023/08/05] 本草模型在CCL 2023 Demo Track进行Poster展示。
+
  [2023/08/03] SCIR实验室开源[活字](https://github.com/HIT-SCIR/huozi)通用问答模型，欢迎大家关注🎉🎉
 
 [2023/07/19] 增加了基于[Bloom](https://huggingface.co/bigscience/bloom-7b1)进行指令微调的模型发布。
@@ -241,7 +243,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## 项目参与者
 
-本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://github.com/s65b40) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿](https://github.com/RuiBai1999)、[席奴瓦](https://github.com/rootnx)、[陈雨晗](https://github.com/Imsovegetable)、[强泽文](https://github.com/1278882181)、[陈健宇](https://github.com/JianyuChen01)、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为[赵森栋](http://homepage.hit.edu.cn/stanzhao?lang=zh)副教授，秦兵教授以及刘挺教授。
+本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://haochun.wang) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿](https://github.com/RuiBai1999)、[席奴瓦](https://github.com/rootnx)、[陈雨晗](https://github.com/Imsovegetable)、[强泽文](https://github.com/1278882181)、[陈健宇](https://github.com/JianyuChen01)、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为[赵森栋](http://homepage.hit.edu.cn/stanzhao?lang=zh)副教授，秦兵教授以及刘挺教授。
 
   
 
