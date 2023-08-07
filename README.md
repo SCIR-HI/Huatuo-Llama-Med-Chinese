@@ -1,28 +1,30 @@
 [**中文**](./README.md) | [**English**](./README_EN.md)
 
 <p align="center" width="100%">
-<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
+<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo_new.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
   
 
-# 本草[原名：华驼(HuaTuo)]: 基于中文医学知识的LLaMA微调模型
+# 本草[原名：华驼(HuaTuo)]: 基于中文医学知识的大语言模型指令微调
 
-### BenTsao (original name: HuaTuo): Tuning LLaMA Model With Chinese Medical Instructions
+### BenTsao (original name: HuaTuo): Instruction-tuning Large Language Models With Chinese Medical Knowledge
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
   
-本项目开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。我们通过医学知识图谱和GPT3.5 API构建了中文医学指令数据集，并在此基础上对LLaMA进行了指令微调，提高了LLaMA在医疗领域的问答效果。
-
-基于相同的数据，我们还训练了医疗版本的ChatGLM模型: [ChatGLM-6B-Med](https://github.com/SCIR-HI/Med-ChatGLM)
-
-此外，我们还尝试利用GPT3.5 API将医学文献中的【结论】作为外部信息融入多轮对话中，在此基础上对LLaMA进行了指令微调。目前。我们只开放针对"肝癌"单个疾病训练的模型参数。在未来，我们计划发布融入文献结论的医学对话数据集，并且会针对“肝胆胰”相关16种疾病训练模型。
+本项目开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的大语言模型集，包括LLaMA、Alpaca-Chinese、Bloom、活字模型等。
 
 
+我们基于医学知识图谱以及医学文献，结合ChatGPT API构建了中文医学指令微调数据集，并以此对各种基模型进行了指令微调，提高了基模型在医疗领域的问答效果。
 
-## 更新日志
-**[2023/07/19] 增加了基于[Bloom](https://huggingface.co/bigscience/bloom-7b1)进行指令微调的模型发布。**
+
+## News
+**[2023/08/07] 🔥🔥增加了基于[活字](https://github.com/HIT-SCIR/huozi)进行指令微调的模型发布，模型效果显著提升。🔥🔥**
+
+ [2023/08/03] SCIR实验室开源[活字](https://github.com/HIT-SCIR/huozi)通用问答模型，欢迎大家关注🎉🎉
+
+[2023/07/19] 增加了基于[Bloom](https://huggingface.co/bigscience/bloom-7b1)进行指令微调的模型发布。
 
 [2023/05/12] 模型由"华驼"更名为"本草"。
 
@@ -32,65 +34,51 @@
 
 [2023/03/31] 增加了基于LLaMA和医学知识库进行指令微调的模型发布。
 
+
 ## A Quick Start
 
 首先安装依赖包，python环境建议3.9+
 
 ```
-
 pip install -r requirements.txt
 
 ```
 
-### 模型下载
+针对所有基模型，我们采用了半精度基模型LoRA微调的方式进行指令微调训练，以在计算资源与模型性能之间进行权衡。
+
+### 基模型
+ - [活字](https://github.com/HIT-SCIR/huozi)，哈尔滨工业大学基于Bloom-7B二次开发的中文通用问答模型
+ - [Bloom-7B](https://huggingface.co/bigscience/bloomz-7b1)
+ - [Alpaca-Chinese](https://github.com/ymcui/Chinese-LLaMA-Alpaca)，基于LLaMA二次开发的中文问答模型
+ - [LLaMA](https://huggingface.co/decapoda-research/llama-7b-hf)
+ 
+### LoRA模型权重下载
 
 LoRA权重可以通过百度网盘或Hugging Face下载：
 
-1. 对LLaMA进行指令微调的LoRA权重文件
- - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf)和[Hugging Face](https://huggingface.co/thinksoso/lora-llama-med)
- - 基于医学文献 [百度网盘](https://pan.baidu.com/s/1jADypClR2bLyXItuFfSjPA?pwd=odsk)和[Hugging Face](https://huggingface.co/lovepon/lora-llama-literature)
-2. 对Alpaca进行指令微调的LoRA权重文件
+1. 🔥对活字进行指令微调的LoRA权重文件
+  - 基于医学知识库以及医学问答数据集 [百度网盘] (https://pan.baidu.com/s/1BPnDNb1wQZTWy_Be6MfcnA?pwd=m21s)
+2. 对Bloom进行指令微调的LoRA权重文件
+ - 基于医学知识库以及医学问答数据集 [百度网盘](https://pan.baidu.com/s/1jPcuEOhesFGYpzJ7U52Fag?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-bloom-med-bloom)
+3. 对Alpaca进行指令微调的LoRA权重文件
  - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/16oxcjzXnXjDpL8SKihgNxw?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-alpaca-med)
  - 基于医学知识库和医学文献 [百度网盘](https://pan.baidu.com/s/1HDdK84ASHmzOFlkmypBIJw?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-alpaca-med-alldata)
-3. 对Bloom进行指令微调的LoRA权重文件
- - 基于28159条医学问答 [百度网盘](https://pan.baidu.com/s/1jPcuEOhesFGYpzJ7U52Fag?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-bloom-med-bloom)
+4. 对LLaMA进行指令微调的LoRA权重文件
+ - 基于医学知识库 [百度网盘](https://pan.baidu.com/s/1jih-pEr6jzEa6n2u6sUMOg?pwd=jjpf)和[Hugging Face](https://huggingface.co/thinksoso/lora-llama-med)
+ - 基于医学文献 [百度网盘](https://pan.baidu.com/s/1jADypClR2bLyXItuFfSjPA?pwd=odsk)和[Hugging Face](https://huggingface.co/lovepon/lora-llama-literature)
+
 
 
 下载LoRA权重并解压，解压后的格式如下：
 
 
 ```
-#1.对LLaMA进行指令微调的LoRA权重文件
-#基于医学知识库
-lora-llama-med/
-  - adapter_config.json   # LoRA权重配置文件
-  - adapter_model.bin   # LoRA权重文件
-
-#基于医学文献
-lora-llama-med-literature/
-  - adapter_config.json   # LoRA权重配置文件
-  - adapter_model.bin   # LoRA权重文件
-
-
-#2. 对Alpaca进行指令微调的LoRA权重文件
-#基于医学知识库
-lora-alpaca-med-alpaca/
-  - adapter_config.json   # LoRA权重配置文件
-  - adapter_model.bin   # LoRA权重文件
-
-#基于医学知识库和医学文献
-lora-alpaca-med-alpaca-alldata/
-  - adapter_config.json   # LoRA权重配置文件
-  - adapter_model.bin   # LoRA权重文件
-
-
-#3. 对Bloom进行指令微调的LoRA权重文件
-#基于28159条医学问答
-lora-bloom-med-bloom/
+**lora-folder-name**/
   - adapter_config.json   # LoRA权重配置文件
   - adapter_model.bin   # LoRA权重文件
 ```
 
+基于相同的数据，我们还训练了医疗版本的ChatGLM模型: [ChatGLM-6B-Med](https://github.com/SCIR-HI/Med-ChatGLM)
 
 
 ### Infer
@@ -113,19 +101,33 @@ bash ./scripts/infer-literature-single.sh
 bash ./scripts/infer-literature-multi.sh
 ```
 
+infer.sh脚本代码如下，请将下列代码中基模型base_model、lora权重lora_weights以及测试数据集路径instruct_dir进行替换后运行
+
+    python infer.py \
+		    --base_model 'BASE_MODEL_PATH' \
+		    --lora_weights 'LORA_WEIGHTS_PATH' \
+		    --use_lora True \
+		    --instruct_dir 'INFER_DATA_PATH' \
+		    --prompt_template 'med_template'
+ 
   
 
 也可参考`./scripts/test.sh`
 
   
 
-### 数据集构建
+## 方法
 
+基模型在医学问答场景下效果有限，指令微调是一种高效的使基模型拥有回答人类问题能力的方法。
+
+
+
+### 数据集构建
+#### 医学知识库
 我们采用了公开和自建的中文医学知识库，主要参考了[cMeKG](https://github.com/king-yyf/CMeKG_tools)。
 
 医学知识库围绕疾病、药物、检查指标等构建，字段包括并发症，高危因素，组织学检查，临床症状，药物治疗，辅助治疗等。知识库示例如下:
 
-  
 
 ```
 
@@ -135,11 +137,7 @@ bash ./scripts/infer-literature-multi.sh
 
 我们利用GPT3.5接口围绕医学知识库构建问答数据，设置了多种Prompt形式来充分利用知识。
 
-  
-
 指令微调的训练集数据示例如下：
-
-  
 
 ```
 
@@ -155,8 +153,9 @@ bash ./scripts/infer-literature-multi.sh
 
 指令微调数据集质量仍有限，后续将进行不断迭代，同时医学知识库和数据集构建代码还在整理中，整理完成将会发布。
 
+### 医学文献
 
-此外，我们收集了2023年关于肝癌疾病的中文医学文献，利用GPT3.5接口围绕医学文献多轮问答数据。在·`./data_literature/liver_cancer.json`中我们提供了其中的1k条训练样例。目前，训练样本的质量仍然有限，在后续我们会进一步迭代数据，会以`公开数据集`的形式对外进行发布。训练样本的示例如下：
+此外，我们收集了2023年关于肝癌疾病的中文医学文献，利用GPT3.5接口围绕医学文献的【结论】构建多轮问答数据。在·`./data_literature/liver_cancer.json`中我们提供了其中的1k条训练样例。目前，训练样本的质量仍然有限，在后续我们会进一步迭代数据，会以`公开数据集`的形式对外进行发布。训练样本的示例如下：
 
 <p align="center" width="100%">
 
@@ -164,13 +163,13 @@ bash ./scripts/infer-literature-multi.sh
 
 </p>
 
-
+目前，我们只开放针对"肝癌"单个疾病训练的模型参数。在未来，我们计划发布融入文献结论的医学对话数据集，并且会针对“肝胆胰”相关16种疾病训练模型。
 
   
 
 ### Finetune
 
-如果想用自己的数据集微调LLaMA，请按照`./data/llama_data.json`的格式构建自己的数据集
+如果想用自己的数据集微调大语言模型，请按照`./data/llama_data.json`中的格式构建自己的数据集
 
 运行finetune脚本
 
@@ -186,11 +185,10 @@ bash ./scripts/finetune.sh
 
 ## 训练细节
 
-### 计算资源需求
+### 计算资源需求参考
 
-我们在一张A100-SXM-80GB显卡上进行了训练，训练总轮次10轮，耗时约2h17m。batch_size=128的情况下显存占用在40G左右。预计3090/4090显卡(24GB显存)以上显卡可以较好支持，根据显存大小来调整batch_size。
+基于LLaMA模型的指令微调过程中，我们在一张A100-SXM-80GB显卡上进行了训练，训练总轮次10轮，耗时约2h17m。batch_size=128的情况下显存占用在40G左右。预计3090/4090显卡(24GB显存)以上显卡可以较好支持，根据显存大小来调整batch_size。
 
-  
 
 ### 实验过程
 
@@ -202,6 +200,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## 模型效果对比
 
+注：测试于2023年3月
   
 | 测试输入 | Llama输出  | Alpaca输出 | BenTsao本草输出                                             |
 |:------------- |:---------------| :-------------|:--------------------------------------------------------|
@@ -224,22 +223,25 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 3. Q: 有使用中医理论或者中医数据吗？
     
    A: 目前还没有
+   
 4. Q: 模型运行的结果不同、效果有限
    
-   A: 由于生成模型生成多样性的考量，多次运行的结果可能会有差异。当前开源的模型由于LLaMA及Alpaca中文语料有限，且知识结合的方式较为粗糙，目前我们在进行相关改进研究，完成后欢迎大家的关注。
+   A: 由于生成模型生成多样性的考量，多次运行的结果可能会有差异。当前开源的模型由于LLaMA及Alpaca中文语料有限，且知识结合的方式较为粗糙，请大家尝试bloom-based和活字-based的模型。
+   
 5. Q: 模型无法运行/推理内容完全无法接受
    
-   A: 请确定已安装requirements中的依赖、配置好cuda环境并添加环境变量、正确输入下载好的模型以及lora的存储位置；推理内容如存在重复生成或部分错误内容属于llama-based模型的偶发现象，与llama模型的中文能力、训练数据规模以及超参设置均有一定的关系，未来我们会不断迭代缓解此问题。如存在严重问题，请将运行的文件名、模型名、lora等配置信息详细描述在issue中，谢谢大家。
+   A: 请确定已安装requirements中的依赖、配置好cuda环境并添加环境变量、正确输入下载好的模型以及lora的存储位置；推理内容如存在重复生成或部分错误内容属于llama-based模型的偶发现象，与llama模型的中文能力、训练数据规模以及超参设置均有一定的关系，请尝试基于活字的新模型。如存在严重问题，请将运行的文件名、模型名、lora等配置信息详细描述在issue中，谢谢大家。
+   
+6.	Q: 发布的若干模型哪个最好？
+
+    A: 根据我们的经验，基于活字模型的效果相对更好一些。 
+ 
 
 
 
 ## 项目参与者
 
 本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://github.com/s65b40) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿](https://github.com/RuiBai1999)、[席奴瓦](https://github.com/rootnx)、[陈雨晗](https://github.com/Imsovegetable)、[强泽文](https://github.com/1278882181)、[陈健宇](https://github.com/JianyuChen01)、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为[赵森栋](http://homepage.hit.edu.cn/stanzhao?lang=zh)副教授，秦兵教授以及刘挺教授。
-
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=SCIR-HI/Huatuo-Llama-Med-Chinese&type=Date)](https://star-history.com/#SCIR-HI/Huatuo-Llama-Med-Chinese&Date)
-
 
   
 
@@ -250,7 +252,6 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 本项目参考了以下开源项目，在此对相关项目和研究开发人员表示感谢。
 
   
-
 - Facebook LLaMA: https://github.com/facebookresearch/llama
 - Stanford Alpaca: https://github.com/tatsu-lab/stanford_alpaca
 - alpaca-lora by @tloen: https://github.com/tloen/alpaca-lora

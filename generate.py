@@ -5,7 +5,7 @@ import gradio as gr
 import torch
 import transformers
 from peft import PeftModel
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
+from transformers import GenerationConfig, AutoModelForCausalLM, AutoTokenizer
 
 from utils.prompter import Prompter
 
@@ -34,9 +34,9 @@ def main(
     ), "Please specify a --base_model, e.g. --base_model='decapoda-research/llama-7b-hf'"
 
     prompter = Prompter(prompt_template)
-    tokenizer = LlamaTokenizer.from_pretrained(base_model)
+    tokenizer = AutoTokenizer.from_pretrained(base_model)
     if device == "cuda":
-        model = LlamaForCausalLM.from_pretrained(
+        model = AutoModelForCausalLM.from_pretrained(
             base_model,
             load_in_8bit=load_8bit,
             torch_dtype=torch.float16,
@@ -48,7 +48,7 @@ def main(
             torch_dtype=torch.float16,
         )
     elif device == "mps":
-        model = LlamaForCausalLM.from_pretrained(
+        model = AutoModelForCausalLM.from_pretrained(
             base_model,
             device_map={"": device},
             torch_dtype=torch.float16,
@@ -60,7 +60,7 @@ def main(
             torch_dtype=torch.float16,
         )
     else:
-        model = LlamaForCausalLM.from_pretrained(
+        model = AutoModelForCausalLM.from_pretrained(
             base_model, device_map={"": device}, low_cpu_mem_usage=True
         )
         model = PeftModel.from_pretrained(
@@ -144,8 +144,8 @@ def main(
                 label="Output",
             )
         ],
-        title="🦙🌲 Alpaca-LoRA",
-        description="Alpaca-LoRA is a 7B-parameter LLaMA model finetuned to follow instructions. It is trained on the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) dataset and makes use of the Huggingface LLaMA implementation. For more information, please visit [the project's website](https://github.com/tloen/alpaca-lora).",  # noqa: E501
+        title="BenTsao",
+        description="",  # noqa: E501
     ).launch(server_name=server_name, share=share_gradio)
     # Old testing code follows.
 

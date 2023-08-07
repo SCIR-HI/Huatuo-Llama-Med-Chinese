@@ -6,7 +6,7 @@ import gradio as gr
 import torch
 import transformers
 from peft import PeftModel
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
+from transformers import GenerationConfig, AutoModelForCausalLM, AutoTokenizer
 
 from utils.prompter import Prompter
 
@@ -35,8 +35,8 @@ def main(
     prompt_template: str = "med_template",
 ):
     prompter = Prompter(prompt_template)
-    tokenizer = LlamaTokenizer.from_pretrained(base_model)
-    model = LlamaForCausalLM.from_pretrained(
+    tokenizer = AutoTokenizer.from_pretrained(base_model)
+    model = AutoModelForCausalLM.from_pretrained(
         base_model,
         load_in_8bit=load_8bit,
         torch_dtype=torch.float16,
@@ -94,7 +94,6 @@ def main(
         return prompter.get_response(output)
 
     if single_or_multi == "multi":
-
         response=""
         instruction=""
         for _ in range(0,5):  
