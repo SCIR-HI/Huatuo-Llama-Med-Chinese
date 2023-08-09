@@ -59,7 +59,7 @@ pip install -r requirements.txt
 LoRA权重可以通过百度网盘或Hugging Face下载：
 
 1. 🔥对活字进行指令微调的LoRA权重文件
-  - 基于医学知识库以及医学问答数据集 [百度网盘] (https://pan.baidu.com/s/1BPnDNb1wQZTWy_Be6MfcnA?pwd=m21s)
+  - 基于医学知识库以及医学问答数据集 [百度网盘](https://pan.baidu.com/s/1BPnDNb1wQZTWy_Be6MfcnA?pwd=m21s)
 2. 对Bloom进行指令微调的LoRA权重文件
  - 基于医学知识库以及医学问答数据集 [百度网盘](https://pan.baidu.com/s/1jPcuEOhesFGYpzJ7U52Fag?pwd=scir)和[Hugging Face](https://huggingface.co/lovepon/lora-bloom-med-bloom)
 3. 对Alpaca进行指令微调的LoRA权重文件
@@ -110,9 +110,16 @@ infer.sh脚本代码如下，请将下列代码中基模型base_model、lora权�
 		    --lora_weights 'LORA_WEIGHTS_PATH' \
 		    --use_lora True \
 		    --instruct_dir 'INFER_DATA_PATH' \
-		    --prompt_template 'med_template'
+		    --prompt_template 'TEMPLATE_PATH'
  
-  
+
+**_提示模板的选择与模型相关，详情如下：_**
+
+| 活字&Bloom                      | LLaMA&Alpaca                                                                          |                                       
+|:------------------------------|:--------------------------------------------------------------------------------------|
+| `templates/bloom_deploy.json` | 基于医学知识库`templates/med_template.json` <br>  基于医学文献`templates/literature_template.json` |
+
+
 
 也可参考`./scripts/test.sh`
 
@@ -155,7 +162,7 @@ infer.sh脚本代码如下，请将下列代码中基模型base_model、lora权�
 
 指令微调数据集质量仍有限，后续将进行不断迭代，同时医学知识库和数据集构建代码还在整理中，整理完成将会发布。
 
-### 医学文献
+#### 医学文献
 
 此外，我们收集了2023年关于肝癌疾病的中文医学文献，利用GPT3.5接口围绕医学文献的【结论】构建多轮问答数据。在·`./data_literature/liver_cancer.json`中我们提供了其中的1k条训练样例。目前，训练样本的质量仍然有限，在后续我们会进一步迭代数据，会以`公开数据集`的形式对外进行发布。训练样本的示例如下：
 
@@ -253,7 +260,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 本项目参考了以下开源项目，在此对相关项目和研究开发人员表示感谢。
 
-  
+- 活字: https://github.com/HIT-SCIR/huozi
 - Facebook LLaMA: https://github.com/facebookresearch/llama
 - Stanford Alpaca: https://github.com/tatsu-lab/stanford_alpaca
 - alpaca-lora by @tloen: https://github.com/tloen/alpaca-lora
@@ -269,10 +276,10 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## Citation
 
-如果你使用了本项目的数据或者代码，请声明引用
+如果您使用了本项目的数据或者代码，请声明引用
 
   
-
+Paper link: [Huatuo: Tuning llama model with chinese medical knowledge](https://arxiv.org/pdf/2304.06975)
 ```
 
 @misc{wang2023huatuo,
@@ -283,5 +290,6 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
-
+[Huatuo: Tuning llama model with chinese medical knowledge](https://arxiv.org/pdf/2304.06975)
 ```
+
