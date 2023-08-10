@@ -49,10 +49,10 @@ pip install -r requirements.txt
 针对所有基模型，我们采用了半精度基模型LoRA微调的方式进行指令微调训练，以在计算资源与模型性能之间进行权衡。
 
 ### 基模型
- - [活字](https://github.com/HIT-SCIR/huozi)，哈尔滨工业大学基于Bloom-7B二次开发的中文通用问答模型
+ - [活字1.0](https://github.com/HIT-SCIR/huozi)，哈尔滨工业大学基于Bloom-7B二次开发的中文通用问答模型
  - [Bloom-7B](https://huggingface.co/bigscience/bloomz-7b1)
- - [Alpaca-Chinese](https://github.com/ymcui/Chinese-LLaMA-Alpaca)，基于LLaMA二次开发的中文问答模型
- - [LLaMA](https://huggingface.co/decapoda-research/llama-7b-hf)
+ - [Alpaca-Chinese-7B](https://github.com/ymcui/Chinese-LLaMA-Alpaca)，基于LLaMA二次开发的中文问答模型
+ - [LLaMA-7B](https://huggingface.co/decapoda-research/llama-7b-hf)
  
 ### LoRA模型权重下载
 
