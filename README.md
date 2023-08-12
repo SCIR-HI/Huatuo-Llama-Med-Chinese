@@ -13,7 +13,7 @@
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
   
-本项目开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的大语言模型集，包括LLaMA、Alpaca-Chinese、Bloom、活字模型等。
+本项目开源了经过中文医学指令精调/指令微调(Instruction-tuning) 的大语言模型集，包括LLaMA、Alpaca-Chinese、Bloom、活字模型等。
 
 
 我们基于医学知识图谱以及医学文献，结合ChatGPT API构建了中文医学指令微调数据集，并以此对各种基模型进行了指令微调，提高了基模型在医疗领域的问答效果。
