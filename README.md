@@ -20,6 +20,10 @@
 
 
 ## News
+**[2023/09/12]在arxiv发布[《探索大模型从医学文献中交互式知识的获取》](https://arxiv.org/pdf/2309.04198.pdf)**
+
+**[2023/09/08]在arxiv发布[《基于知识微调的大语言模型可靠中文医学回复生成方法》](https://arxiv.org/pdf/2309.04175.pdf)**  
+
 **[2023/08/07] 🔥🔥增加了基于[活字](https://github.com/HIT-SCIR/huozi)进行指令微调的模型发布，模型效果显著提升。🔥🔥**
 
 [2023/08/05] 本草模型在CCL 2023 Demo Track进行Poster展示。
@@ -174,6 +178,7 @@ infer.sh脚本代码如下，请将下列代码中基模型base_model、lora权�
 
 目前，我们只开放针对"肝癌"单个疾病训练的模型参数。在未来，我们计划发布融入文献结论的医学对话数据集，并且会针对“肝胆胰”相关16种疾病训练模型。
 
+相关细节可参考我们的文章：[《探索大模型从医学文献中交互式知识的获取》](https://arxiv.org/pdf/2309.04198.pdf)
   
 
 ### Finetune
@@ -276,12 +281,12 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## Citation
 
-如果您使用了本项目的数据或者代码，请声明引用
+如果您使用了本项目的数据或者代码，或是我们的工作对您有所帮助，请声明引用
 
-  
-Paper link: [Huatuo: Tuning llama model with chinese medical knowledge](https://arxiv.org/pdf/2304.06975)
+
+首版技术报告: [Huatuo: Tuning llama model with chinese medical knowledge](https://arxiv.org/pdf/2304.06975)
+
 ```
-
 @misc{wang2023huatuo,
       title={HuaTuo: Tuning LLaMA Model with Chinese Medical Knowledge},
       author={Haochun Wang and Chi Liu and Nuwa Xi and Zewen Qiang and Sendong Zhao and Bing Qin and Ting Liu},
@@ -290,6 +295,32 @@ Paper link: [Huatuo: Tuning llama model with chinese medical knowledge](https://
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
-[Huatuo: Tuning llama model with chinese medical knowledge](https://arxiv.org/pdf/2304.06975)
+```
+
+知识微调：[Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese
+](https://arxiv.org/pdf/2309.04175.pdf)
+
+```
+@misc{wang2023knowledgetuning,
+      title={Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese}, 
+      author={Haochun Wang and Sendong Zhao and Zewen Qiang and Zijian Li and Nuwa Xi and Yanrui Du and MuZhen Cai and Haoqiang Guo and Yuhan Chen and Haoming Xu and Bing Qin and Ting Liu},
+      year={2023},
+      eprint={2309.04175},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
+医学文献知识获取：[The CALLA Dataset: Probing LLMs’ Interactive Knowledge Acquisition from Chinese Medical Literature](https://arxiv.org/pdf/2309.04198.pdf)
+
+```
+@misc{du2023calla,
+      title={The CALLA Dataset: Probing LLMs' Interactive Knowledge Acquisition from Chinese Medical Literature}, 
+      author={Yanrui Du and Sendong Zhao and Muzhen Cai and Jianyu Chen and Haochun Wang and Yuhan Chen and Haoqiang Guo and Bing Qin},
+      year={2023},
+      eprint={2309.04198},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
