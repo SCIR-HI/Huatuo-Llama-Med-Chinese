@@ -20,6 +20,8 @@
 
 
 ## News
+**[2023/09/24]发布[《面向智慧医疗的大语言模型微调技术》](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/tree/main/doc/Tuning_Methods_for_LLMs_towards_Health_Intelligence.pdf)**
+
 **[2023/09/12]在arxiv发布[《探索大模型从医学文献中交互式知识的获取》](https://arxiv.org/pdf/2309.04198.pdf)**
 
 **[2023/09/08]在arxiv发布[《基于知识微调的大语言模型可靠中文医学回复生成方法》](https://arxiv.org/pdf/2309.04175.pdf)**  
