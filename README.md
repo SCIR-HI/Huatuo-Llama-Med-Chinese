@@ -20,7 +20,14 @@
 
 
 ## News
+
+**[2024/07/25][《基于知识微调的大语言模型可靠中文医学回复生成方法》](https://dl.acm.org/doi/abs/10.1145/3686807)被ACM TKDD录用**
+
 **[2023/09/24]发布[《面向智慧医疗的大语言模型微调技术》](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/tree/main/doc/Tuning_Methods_for_LLMs_towards_Health_Intelligence.pdf)**
+
+
+<details>
+<summary>历史新闻</summary>
 
 **[2023/09/12]在arxiv发布[《探索大模型从医学文献中交互式知识的获取》](https://arxiv.org/pdf/2309.04198.pdf)**
 
@@ -39,6 +46,10 @@
 [2023/04/28] 增加了基于[中文Alpaca大模型](https://github.com/ymcui/Chinese-LLaMA-Alpaca)进行指令微调的模型发布。
 
 [2023/04/24] 增加了基于LLaMA和医学文献进行指令微调的模型发布。
+
+</details>
+
+
 
 [2023/03/31] 增加了基于LLaMA和医学知识库进行指令微调的模型发布。
 
@@ -226,6 +237,8 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 
 
+
+
    
 ## 常见问题
 1. Q: 为什么更名为"本草"？
@@ -286,6 +299,28 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 如果您使用了本项目的数据或者代码，或是我们的工作对您有所帮助，请声明引用
 
 
+
+知识微调：[Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Trustworthy Response Generation in Chinese
+](https://arxiv.org/pdf/2309.04175.pdf)
+
+```
+@article{10.1145/3686807,
+author = {Wang, Haochun and Zhao, Sendong and Qiang, Zewen and Li, Zijian and Liu, Chi and Xi, Nuwa and Du, Yanrui and Qin, Bing and Liu, Ting},
+title = {Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Trustworthy Response Generation in Chinese},
+year = {2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1556-4681},
+url = {https://doi.org/10.1145/3686807},
+doi = {10.1145/3686807},
+abstract = {Large Language Models (LLMs) have demonstrated remarkable success in diverse natural language processing (NLP) tasks in general domains. However, LLMs sometimes generate responses with the hallucination about medical facts due to limited domain knowledge. Such shortcomings pose potential risks in the utilization of LLMs within medical contexts. To address this challenge, we propose knowledge-tuning, which leverages structured medical knowledge bases for the LLMs to grasp domain knowledge efficiently and facilitate trustworthy response generation. We also release cMedKnowQA, a Chinese medical knowledge question-answering dataset constructed from medical knowledge bases to assess the medical knowledge proficiency of LLMs. Experimental results show that the LLMs which are knowledge-tuned with cMedKnowQA, can exhibit higher levels of accuracy in response generation compared with vanilla instruction-tuning and offer a new trustworthy way for the domain adaptation of LLMs. We release our code and data at .},
+note = {Just Accepted},
+journal = {ACM Trans. Knowl. Discov. Data},
+month = aug,
+keywords = {Large Language Model, Medical Question Answering, Trustworthy Response Generation, Medical Knowledge Base}
+}
+```
+
 首版技术报告: [Huatuo: Tuning llama model with chinese medical knowledge](https://arxiv.org/pdf/2304.06975)
 
 ```
@@ -296,20 +331,6 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
       eprint={2304.06975},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
-}
-```
-
-知识微调：[Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese
-](https://arxiv.org/pdf/2309.04175.pdf)
-
-```
-@misc{wang2023knowledgetuning,
-      title={Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese}, 
-      author={Haochun Wang and Sendong Zhao and Zewen Qiang and Zijian Li and Nuwa Xi and Yanrui Du and MuZhen Cai and Haoqiang Guo and Yuhan Chen and Haoming Xu and Bing Qin and Ting Liu},
-      year={2023},
-      eprint={2309.04175},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
 }
 ```
 
