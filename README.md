@@ -207,8 +207,21 @@ bash ./scripts/finetune.sh
 ```
 
   
+
   
-  
+### 知识微调
+
+上述介绍了我们如何利用医学知识构造高质量问答对的过程，即从“knowledge”到“(question, answer)”，在此基础上，我们提出了知识微调，旨在让大语言模型在推理时显式利用知识库中的知识，使大模型学会从“question”到“knowledge”，过程可分为以下三阶段，其过程如下图所示。第一阶段：根据问题填充知识检索的参数，包括中心词和属性。第二阶段：查询获取带有填充参数所对应的知识。第三阶段：使用获得的知识来生成回答。[样例数据链接](data/knowledge_tuning_data_sample.txt)
+<p align="center" width="100%">
+
+<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/process_of_knowledge_tuning.png" alt="SCIR-HI-HuaTuo-literature" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+
+</p>
+
+相关细节可参考我们的文章：[《基于知识微调的大语言模型可靠中文医学回复生成方法》](https://dl.acm.org/doi/abs/10.1145/3686807)  
+
+
+
 
 ## 训练细节
 
@@ -270,7 +283,7 @@ https://wandb.ai/thinksoso/llama_med/runs/a5wgcnzt/overview?workspace=user-think
 
 ## 项目参与者
 
-本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://haochun.wang) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿](https://github.com/RuiBai1999)、[席奴瓦](https://github.com/rootnx)、[陈雨晗](https://github.com/Imsovegetable)、[强泽文](https://github.com/1278882181)、[陈健宇](https://github.com/JianyuChen01)、[李子健](https://github.com/FlowolfzzZ)完成，指导教师为[赵森栋](http://homepage.hit.edu.cn/stanzhao?lang=zh)副教授，秦兵教授以及刘挺教授。
+本项目由哈尔滨工业大学社会计算与信息检索研究中心健康智能组[王昊淳](https://haochun.wang) 、[杜晏睿](https://github.com/DYR1)、[刘驰](https://github.com/thinksoso)、[白睿](https://github.com/RuiBai1999)、[席奴瓦](https://github.com/rootnx)、[陈雨晗](https://github.com/Imsovegetable)、[强泽文](https://github.com/1278882181)、[陈健宇](https://github.com/JianyuChen01)、[李子健](https://github.com/FlowolfzzZ)、[范宇政](https://github.com/zheng-2001)完成，指导教师为[赵森栋](http://homepage.hit.edu.cn/stanzhao?lang=zh)副教授，秦兵教授以及刘挺教授。
 
   
 
