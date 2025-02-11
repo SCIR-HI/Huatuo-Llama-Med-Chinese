@@ -1,0 +1,802 @@
+[
+    {
+        "question": "描述传染性的甲型肝炎的传播途径及预防措施。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "请说明腓骨神经病变的常见病因和治疗方法。",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "儿童多动症的核心症状是什么？有哪些常见的治疗方案？",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "心律失常的常见类型有哪些，它们是如何被诊断的？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "葡萄膜炎的临床表现是什么，以及常见的治疗方法有哪些？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "脑卒中急性发作时的处理步骤是什么，及早期症状有哪些？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "癌症的放射治疗有何副作用？如何管理这些副作用？",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "阐述无创产前基因检测（NIPT）的工作原理及适用人群。",
+        "ICD-10": "Pregnancy, childbirth and the puerperium"
+    },
+    {
+        "question": "动脉硬化的主要风险因素有哪些，预防措施应怎么做？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "什么是急性心肌梗死的主要症状，急救处理应包括哪些步骤？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "请解释吸烟对肺部健康的负面影响，以及戒烟有哪些科学有效的方法？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "详细描述常见的急性胃肠炎症状及处理方法。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "你会如何向患者解释血浆置换疗法的步骤与注意事项？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "肩周炎的常见症状是什么，它通常如何被治疗？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "白血病分为哪些不同的类型，每种类型的主要特点是什么？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "多发性硬化症的早期症状有哪些？这个病是如何确诊的？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "请解释何谓多发性骨髓瘤，并概述其常见的诊断和治疗方法。",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "请解释一下传染性单核细胞增多症的病因和预防方法。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "解释梅毒的各个阶段及其在不同阶段的主要症状表现。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "假设一个患者出现了黄疸，这可能提示哪些潜在的健康问题？请描述相关的病因和诊断流程。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "请解释什么是RAST测试，它在过敏检测中的作用是什么？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "早期阿尔茨海默病有哪些典型表现？这种病在初期如何被诊断和治疗？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "解释癌症免疫治疗的原理，并举例说明一些常见的免疫治疗方法。",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "乙肝病毒携带者需要定期进行哪些检查？这些检查对于病情监测有什么重要作用？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "克罗恩病和溃疡性结肠炎有什么区别？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "肌肉萎缩症的遗传背景及疾病进展机制是什么？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "什么是系统性红斑狼疮？其常见症状及诊断标准是什么？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "什么是乳腺纤维腺瘤，它通常如何被处理？",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "请解释什么是偏头痛，以及一些常见的治疗方法。",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "什么是膝关节炎，患者通常会有哪些表现，如何缓解这些症状？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "急性肾损伤的常见原因有哪些，如何进行预防和早期识别？",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "对于糖尿病患者，控制血糖的饮食建议是什么？推荐几种对控制血糖有益的食物。",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "什么是格林-巴利综合征，它的主要临床表现是什么？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "描述心房纤颤的成因及其可能带来的健康风险。",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "什么是呼吸机相关性肺炎，其预防措施有哪些？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "解释黄斑变性的病因及其治疗选择。",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "什么是皮质类固醇，它们在医学上有何应用？请提供两个例子。",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "什么是双相情感障碍，其主要症状表现有哪些？",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "过敏反应是如何发生的？请列举三种常见的致敏物质，并描述相应的防治措施。",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "产后抑郁的症状是什么，有哪些有效的治疗或干预方法？",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "乙肝病毒携带者能否进行体育锻炼？如果能，应该注意哪些事项？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "胃溃疡的常见症状有哪些，它们通常如何被治疗？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "请详细说明儿童注意力缺陷多动障碍（ADHD）的诊断标准。",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "如何预防和控制流感的传播？如何做到自我保护？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "请列出几种常见的抗抑郁药物及其可能的副作用。",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "糖尿病性视网膜病变的主要病理改变是什么，它如何影响视力？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "艾滋病的传播途径有哪些，如何进行有效的预防？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "什么是代谢综合征，它由哪些疾病组成，检查时应主要关注哪些指标？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "慢性肾病有哪些病因及常见的治疗方法？",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "如何诊断甲状腺功能减退症，以及它的常见症状有哪些？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "在肝脏活检过程中，有哪些需要注意的事项和潜在风险？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "骨梗死的病理特征是什么，如何进行诊断和治疗？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "如何鉴别病毒性和细菌性咽喉炎？请描述两者在症状和治疗方法上的主要区别。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "周期性麻痹的发生机制是什么，主要的诱发因素有哪些？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "小儿肠痉挛的症状和原因是什么？如何缓解这种情况？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "对于严重的腹腔出血，通常有哪些急救措施？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "血液检查中，C反应蛋白升高通常代表什么，还可能暗示哪些健康问题？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "季节性皮炎的症状有哪些？为了减轻症状，最有效的预防措施是什么？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "什么是完全性房室传导阻滞，患者可能会有哪些症状？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "口服异维A酸治疗重度痤疮的注意事项有哪些？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "骨肉瘤是什么？它的病因、症状以及治疗方式是什么？",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "如何预防老年人髋部骨折，骨折后有什么有效的治疗方法？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "对比急性肝衰竭与慢性肝病的病因、临床表现和治疗方法。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "小儿哮鸣有哪些诱因，应该采取哪些预防措施？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "肾脏移植手术后，病人需要注意哪些事项来避免排斥反应？",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "请描述大肠息肉的危险因素及其去除手术的风险。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "眼压高的危害有哪些？哪些方法可以有效控制眼压？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "视疲劳通常有哪些表现，应该如何缓解？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "成骨不全症（又称脆骨病）的病因是什么？有哪些常见的临床特征？",
+        "ICD-10": "Congenital malformations, deformations and chromosomal abnormalities"
+    },
+    {
+        "question": "如何治疗胃酸反流？有哪些非药物的管理方式？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "在冠心病急性发作时，患者应如何进行紧急处理？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "庖疹性皮肤病的主要症状和诊疗方法是什么？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "什么是体外膜肺氧合（ECMO）？在什么情况下会使用这种技术？",
+        "ICD-10": "Others"
+    },
+    {
+        "question": "银屑病的病因和病理学表现是什么，临床上有哪些治疗方法？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "请详细说明髌骨软化症的症状及康复训练方法。",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "请描述进行骨密度测试的目的是什么，常见的测试方法有哪些？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "抗焦虑药物氯硝西泮的用法和禁忌是什么？",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "何为格雷夫斯病，它是如何诊断和治疗的？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "请解释手足口病的传播途径及其主要预防措施。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "请解析在医学检查中“红细胞沉降率”升高的可能原因及其临床意义。",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "比较细菌性感冒和病毒性感冒的症状和治疗方法的不同。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "请比较急性应激障碍和创伤后应激障碍（PTSD）的主要区别。",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "适用于胃溃疡的药物类型都有哪几种？请详细描述其作用机制。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "中枢性尿崩症的主要病因是什么，通常通过哪些方法进行诊断和治疗？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "描述肾小球肾炎的病理机制以及常见的影像学特点。",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "对比川崎病和手足口病的临床表现和治疗方案。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "详细说明急性脊髓损伤的紧急处理步骤和长期护理。",
+        "ICD-10": "Injury, poisoning and certain other consequences of external causes"
+    },
+    {
+        "question": "如何识别脚癣的症状？推荐几种有效的治疗方法。",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "当一个人长期食欲不振时，可能是什么原因导致的？应如何进行诊断和治疗？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "请解释一下什么是免疫复合物，哪些疾病与其相关？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "深部脑刺激(DBS)治疗帕金森病的机制是什么？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "异位性皮炎的临床表现是什么？有哪些有效的治疗手段？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "什么是风疹，它是如何传播的，主要症状是什么？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "MSCI等血液学检查在诊断白血病中的作用是什么？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "肠梗阻一般分为哪几类？每类的主要特点是什么？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "寡核苷酸疗法在治疗基因性疾病中有哪些应用实例？这种疗法如何发挥作用？",
+        "ICD-10": "Others"
+    },
+    {
+        "question": "请提供流行性脑脊髓膜炎的流行病学特征和预防方法。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "什么是脑出血的常见原因，紧急处理步骤是什么？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "什么是呼吸衰竭，它的分类和急救处理措施是什么？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "在治疗急性淋巴细胞白血病（ALL）中，化疗和靶向疗法各自的优缺点是什么？",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "如何治疗和预防风湿性心脏病？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "讲解肝硬化的不同阶段及其各阶段的管理措施。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "什么是结直肠息肉，它们的存在会引发哪些健康问题？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "诺卡菌病的临床表现有哪些？它是如何被诊断和治疗的？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "输卵管阻塞会导致哪些健康问题？有哪些检测方法？",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "眼科检查中的“裂隙灯检查”是什么，它的作用有哪些？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "外阴阴道念珠菌感染有何症状及治疗方法？应注意哪些预防措施？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "简述神经母细胞瘤的病因和早期发现方法。",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "近视眼和远视眼有什么不同？请描述它们的成因及矫正方式。",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "什么是急性支气管炎，它的病因、症状和治疗方法有哪些？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "胸膜间皮瘤的早期症状是什么？有哪些风险因素？",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "描述曲霉菌病的肺部表现及其治疗方法。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "慢性胰腺炎患者需采取哪些生活方式改变来减轻病情？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "阐述酒精使用障碍的危害以及其治疗方案。",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "什么是肺淀粉样变性，哪些临床表现是常见的？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "鼻咽癌的早期症状是什么，如何确诊？",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "描述胃穿孔的形成机制、急性症状及其应急处理方法。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "了解骨结核的传播途径、临床表现及治疗方案。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "肠瘘是什么，讨论其管理和治疗策略。",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "耳石症（良性阵发性位置性眩晕）有哪些症状及诊断方法？",
+        "ICD-10": "Diseases of the ear and mastoid process"
+    },
+    {
+        "question": "描述下疤痕修复的常见方法和作用机制。",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "请解释什么是过敏性支气管肺曲霉病。有哪些诊断方法？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "如何诊断和治疗外阴白斑病？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "拇外翻的非手术治疗方法有哪些，这些方法的有效性如何评估？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "铁尘肺病的主要成因是什么，如何预防和治疗？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "心理治疗有哪些主要流派，每种流派在治疗上的侧重方向是什么？",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "针对乳腺增生，医生会做哪些检查？病因和治疗方法是什么？",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "描述大隐静脉曲张的手术治疗方法，以及术前患者需要注意什么。",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "详述心包炎的病因、诊断方法及其可能的治疗途径。",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "腰椎滑脱症是怎样一种病变，临床上如何处理？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "妇科炎症的常见症状有哪些？如何进行诊断和治疗？",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "什么是扩张型心肌病？其病因和治疗方法是什么？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "沙眼的病因和流行情况是怎样的，应采用哪些防治策略？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "什么是急性坏死性脑病，哪类人群易患？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "探讨细菌性腹膜炎的病因、症状及治疗策略。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "骨软骨炎通常发生在什么样的人群中，这种疾病如何进行诊断？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "请解释不孕症的主要原因以及可能的治疗方案。",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "描述躁郁症与单纯性抑郁症的主要区别。",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "什么是食道裂孔疝？手术是唯一的治疗方法吗？",
+        "ICD-10": "Diseases of the digestive system"
+    },
+    {
+        "question": "在怀孕初期，哪些症状表明可能存在宫外孕的风险？",
+        "ICD-10": "Pregnancy, childbirth and the puerperium"
+    },
+    {
+        "question": "宫颈糜烂是如何形成的？其治疗方法有哪些？",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "什么是三叉神经痛，患者常常会有怎样的表现？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "请描述子宫肌瘤的分类及其对女性健康的影响。",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "骨盆骨折后通常需要多久才能康复？康复过程中应注意哪些事项？",
+        "ICD-10": "Injury, poisoning and certain other consequences of external causes"
+    },
+    {
+        "question": "描述间质性肺病的典型表现及其常见的病因。",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "请描述一下椎间孔狭窄是什么？它的临床表现和治疗方法是什么？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "视网膜中央动脉阻塞的急救和后续治疗措施是什么？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "白内障的手术治疗包括哪些步骤？有哪些常见的术后护理措施？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "什么是坠积性肺炎？描述其病理生理、临床表现和治疗措施。",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "一位患者抱怨看到视野中有浮游物或闪光，这可能是哪些眼部疾病的症状？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "请解释什么是骨纤维结构不良及其主要表现。",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "什么是石骨症，它的原因、症状和治疗方法有哪些？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "请解释腱鞘囊肿的发展原因和主要治疗方法。",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "探讨克雅二氏病的病因及其对大脑的影响。",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "如何诊断及治疗糖原累积病？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "请解释一下坏死性筋膜炎的病理机制及治疗方案。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "请介绍脊髓空洞症的诊断过程及其治疗选项。",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "你能解释一下何谓尺神经麻痹吗？这种疾病的常见诱因和治疗方案是什么？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "阐述象皮腿症状以及其可能的并发症。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "怀疑有心肌桥的患者应该做哪些检查？如何进行治疗？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "您能解释一下婴儿支气管肺发育不良的成因及主要治疗措施吗？",
+        "ICD-10": "Certain conditions originating in the perinatal period"
+    },
+    {
+        "question": "请解释心脏横纹肌肉瘤的临床表现和治疗选项。",
+        "ICD-10": "Neoplasms"
+    },
+    {
+        "question": "请解释一下汉坦病毒肺综合征的症状和传播途径。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "阐述皮样囊肿是什么，它通常在人体的哪些部位发生？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "眼睑炎通常由哪些因素引起，有哪些常见的治疗策略？",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "什么是利什曼病，它是如何传播的？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "解释土拉热的病原体、传播方式及常见临床症状。",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "缺乏镁对人体的影响是什么样的？哪些食物富含镁？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "什么是脊髓性肌肉萎缩症(SMA)，以及它的主要分类和症状是什么？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "脾脏肿大常见的原因是什么，应该如何进行诊断和处理？",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "妥瑞氏症在儿童中有哪些常见表现，当前有什么主要的治疗手段？",
+        "ICD-10": "Mental and behavioural disorders"
+    },
+    {
+        "question": "阿狄森病是什么？患者常见表现及应对措施有哪些？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "阐述毛囊角化症的病因、症状和治疗方法。",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "具述韦格纳肉芽肿的临床表现以及它的诊断标准。",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "男性乳腺发育症是什么，这种情况需要手术治疗吗？",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "解释眼眶假瘤的病因和治疗手段。",
+        "ICD-10": "Diseases of the eye and adnexa"
+    },
+    {
+        "question": "库鲁病主要通过什么途径传播？其主要表现是什么？",
+        "ICD-10": "Certain infectious and parasitic diseases"
+    },
+    {
+        "question": "鼻出血（鼻衄）常见的诱因有哪些，怎样进行紧急处理？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "请解释何为天疱疮，其主要病理机制和常见治疗方案有哪些？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "房间隔缺损会引发哪些并发症？",
+        "ICD-10": "Congenital malformations, deformations and chromosomal abnormalities"
+    },
+    {
+        "question": "描述一下抗磷脂综合征的病理基础和诊断标准。",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "请解释一下寒冷性荨麻疹的原因及其治疗方法。",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "舒尔曼病通常有哪些临床表现，治疗的方法有哪些？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "探讨佩梅病的成因、临床特征和诊断策略。",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "罕见的骨骺发育异常症有哪些症状和治疗方案？",
+        "ICD-10": "Congenital malformations, deformations and chromosomal abnormalities"
+    },
+    {
+        "question": "解释一下缩窄性心包炎的病理机制及其症状。",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "何谓黑棘皮症？描述该病在不同患者中的常见表现形式。",
+        "ICD-10": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "question": "拇囊炎有哪些临床表现？应如何进行诊断和处理？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "糠秕孢子菌毛囊炎的诊断挑战和治疗方式有哪些？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "讲述吸脂手术在塑形美容中的应用及其潜在风险。",
+        "ICD-10": "Others"
+    },
+    {
+        "question": "上颌窦炎有哪些典型的临床表现？如何治疗？",
+        "ICD-10": "Diseases of the respiratory system"
+    },
+    {
+        "question": "有哪些原因会导致马蹄足的形成？它的治疗方法有哪些？",
+        "ICD-10": "Congenital malformations, deformations and chromosomal abnormalities"
+    },
+    {
+        "question": "伯-韦综合征的主要病因是什么，如何进行科学检查和诊断？",
+        "ICD-10": "Diseases of the circulatory system"
+    },
+    {
+        "question": "对新生儿胎粪吸入综合征及其常见治疗措施进行详细说明。",
+        "ICD-10": "Certain conditions originating in the perinatal period"
+    },
+    {
+        "question": "中毒性表皮坏死松解症是什么，它的发病机制有哪些？",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    },
+    {
+        "question": "针对低颅压综合征，临床医生应如何进行治疗和管理？",
+        "ICD-10": "Diseases of the nervous system"
+    },
+    {
+        "question": "什么是干燥综合征，它的主要症状和治疗方式是什么？",
+        "ICD-10": "Diseases of the musculoskeletal system and connective tissue"
+    },
+    {
+        "question": "解释何为膀胱炎，及其典型症状和预防措施。",
+        "ICD-10": "Diseases of the genitourinary system"
+    },
+    {
+        "question": "请描述小儿噬血细胞综合征（HLH）的病理机制及常见的治疗方案。",
+        "ICD-10": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    },
+    {
+        "question": "请解释什么是脂膜炎及其常见症状。",
+        "ICD-10": "Diseases of the skin and subcutaneous tissue"
+    }
+]
