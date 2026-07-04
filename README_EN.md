@@ -1,8 +1,8 @@
 [**中文**](./README.md) | [**English**](./README_EN.md)
 <p align="center" width="100%">
-<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo260414.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
+<a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/" target="_blank"><img src="assets/logo/logo_new.png" alt="SCIR-HI-HuaTuo" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
-# BenCao (original name: HuaTuo): Instruction-tuning Large Language Models With Chinese Medical Knowledge
+# BenTsao (original name: HuaTuo): Instruction-tuning Large Language Models With Chinese Medical Knowledge
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese/blob/main/LICENSE) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
@@ -14,13 +14,13 @@ We constructed a Chinese medical instruct-tuning dataset using medical knowledge
 ## News
 **[2023/08/07] 🔥🔥 Released a model instruction-tuned based on [Huozi](https://github.com/HIT-SCIR/huozi), resulting in a significant improvement in model performance. 🔥🔥**
 
-[2023/08/05] The "BenCao" model was presented as a poster at the CCL 2023 Demo Track.
+[2023/08/05] The "Bentsao" model was presented as a poster at the CCL 2023 Demo Track.
 
 [2023/08/03] SCIR Lab open-sourced the [Huozi](https://github.com/HIT-SCIR/huozi) general question-answering model. Everyone is welcome to check it out! 🎉🎉
 
 [2023/07/19] Released a model instruction-tuned based on [Bloom](https://huggingface.co/bigscience/bloom-7b1).
 
-[2023/05/12] The model was renamed from "Huatuo" to "BenCao".
+[2023/05/12] The model was renamed from "Huatuo" to "Bentsao".
 
 [2023/04/28] Released a model instruction-tuned based on the [Chinese-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca).
 
@@ -180,9 +180,9 @@ Note: test in March 2023.
 
 ##FAQs
 
-1. 	Q: Why was it renamed to "BenCao"?
+1. 	Q: Why was it renamed to "Bentsao"?
 	
-	A: For naming consistency with the SCIR large language model series, the name of the Chinese medical model has been renamed to "BenCao".
+	A: For naming consistency with the SCIR large language model series, the name of the Chinese medical model has been renamed to "Bentsao".
 
 2. 	Q: Why "Huatuo(华驼)" instead of "Huatuo(华佗)"?
 	
